@@ -1,0 +1,48 @@
+value CertificateBase ::= 
+{
+  version 3,
+  type explicit,
+  issuer sha256AndDigest : '64F920AB87BF8B0A'H,
+  toBeSigned 
+  {
+    id name : "ra.qa.v2xscms.com",
+    cracaId 'DAE1F5'H,
+    crlSeries 2,
+    validityPeriod 
+    {
+      start 434707200,
+      duration hours : 26448
+    },
+    region identifiedRegion : 
+      {
+        countryOnly : 124,
+        countryOnly : 484,
+        countryOnly : 840
+      },
+    appPermissions 
+    {
+      {
+        psid 35,
+        ssp opaque : '8B0001'H
+      }
+    },
+    certRequestPermissions 
+    {
+      {
+        subjectPermissions all : NULL,
+        minChainDepth 0
+      }
+    },
+    encryptionKey 
+    {
+      supportedSymmAlg aes128Ccm,
+      publicKey eciesNistP256 : compressed-y-1 : 'E5FC09EAF75B2E5A7D4434767DB2168A832E775EB33039D1402D399E3954AE02'H
+    },
+    verifyKeyIndicator verificationKey : ecdsaNistP256 : compressed-y-0 : '62313365E637C2E07EF520BF27A088174D83BE02265108F7516B1FEC1B90F14D'H
+  },
+  signature ecdsaNistP256Signature : 
+    {
+      r x-only : '176A28AB57345D43DCFB16CCD297245119B99B2B671383F9579A99B0C3FB85A4'H,
+      s '44BD457D0B5DAA4EDE243A397154F64B81463A6D05338A1D5B980717123CA36C'H
+    }
+}

@@ -1,0 +1,23 @@
+value ScopedCertificateRequest ::= 
+{
+  version 1,
+  content ee-ra : eeRaPseudonymCertProvisioningRequest : 
+      {
+        version 1,
+        verify-key-info 
+        {
+          seed-key compressed-y-0 : '6592897B913EB4FD7E38F692B00AF48FF2BEFD87C3C68C7450311DD509E51221'H,
+          expansion '7ADBFDDE5ED0C97C39FC37480466AE20'H
+        },
+        resp-enc-key-info 
+        {
+          seed-key compressed-y-1 : '57655DCA4EDA564F20A27A27C8F50646C81DF3B73283B664874539968F2A0905'H,
+          expansion '3A00B2739026BF4BEC91247D1CB82297'H
+        },
+        common 
+        {
+          current-time 434733540,
+          requested-start-time 434733540
+        }
+      }
+}

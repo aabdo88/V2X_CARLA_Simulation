@@ -1,0 +1,49 @@
+value ScopedCertificateRequest ::= 
+{
+  version 1,
+  content eca-ee : eeEcaCertRequest : 
+      {
+        version 1,
+        currentTime 434733540,
+        tbsData 
+        {
+          id name : "",
+          cracaId '000000'H,
+          crlSeries 0,
+          validityPeriod 
+          {
+            start 434733540,
+            duration years : 3
+          },
+          region identifiedRegion : 
+            {
+              countryOnly : 124,
+              countryOnly : 484,
+              countryOnly : 840
+            },
+          certRequestPermissions 
+          {
+            {
+              subjectPermissions explicit : 
+                {
+                  {
+                    psid 32,
+                    sspRange opaque : 
+                      {
+                        ''H
+                      }
+                  },
+                  {
+                    psid 38,
+                    sspRange opaque : 
+                      {
+                        ''H
+                      }
+                  }
+                }
+            }
+          },
+          verifyKeyIndicator verificationKey : ecdsaNistP256 : compressed-y-1 : '6CC9B64E4BDAA3169EBD27D63770EC1259F475DC56BF52E5B70C5E499B1B5F1E'H
+        }
+      }
+}

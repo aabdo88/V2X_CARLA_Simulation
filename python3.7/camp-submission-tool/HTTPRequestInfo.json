@@ -1,0 +1,15 @@
+{
+  "submitMBRToRa":"https://ra.test.v2xscms.com:8892/process-misbehavior-report",
+  "requestVehiclePseudoCert":"https://ra.test.v2xscms.com:8892/provision-pseudonym-certificate-batch",
+  "enrollVehicle":"https://192.168.201.51:8895/enrollment-certificate-request",
+  "vehicleCertDownload":"https://ra.test.v2xscms.com:8892/download/batch",
+  "certificateChain":"https://ra.test.v2xscms.com:8892/download/local-certificate-chain",
+  "sendPLVRequest":"https://192.168.201.58:8891/plvs",
+  "sendHPCRRequest":"https://192.168.201.58:8891/hash-of-individual-request",
+  "blacklistRequest":"https://ra.test.v2xscms.com:8892/blacklist-by-hpcr",
+  "sendLSRequest":"https://192.168.201.56:8890/linkage-seed-hash",
+  "sendLIRequest":"https://192.168.201.56:8890/linkage-info",
+  "sendLCIRequest":"https://ra.test.v2xscms.com:8892/retrieve-linkage-chain-identifiers",
+  "sendObeIdBlRequest":"https://ra.test.v2xscms.com:8892/blacklist-by-rif",
+  "crlResponse":"https://192.168.201.60:8894/download-crl/"
+}

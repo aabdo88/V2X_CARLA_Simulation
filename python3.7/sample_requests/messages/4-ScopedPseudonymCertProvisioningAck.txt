@@ -1,0 +1,14 @@
+value ScopedPseudonymCertProvisioningAck ::= 
+{
+  version 1,
+  content ee-ra : raEePseudonymCertProvisioningAck : 
+      {
+        version 1,
+        requestHash '5F05162D1297B202'H,
+        reply ack : 
+          {
+            certDLTime 434733540,
+            certDLURL "https://ra.qa.v2xscms.com"
+          }
+      }
+}

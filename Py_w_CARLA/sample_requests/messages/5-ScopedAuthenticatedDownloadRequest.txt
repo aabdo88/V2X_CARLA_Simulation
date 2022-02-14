@@ -1,0 +1,9 @@
+value ScopedCertificateRequest ::= 
+{
+  version 1,
+  content ee-ra : eeRaAuthenticatedDownloadRequest : 
+      {
+        timestamp 434733540,
+        filename "5F05162D1297B202_90.zip"
+      }
+}

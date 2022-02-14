@@ -1,0 +1,73 @@
+value CertificateBase ::= 
+{
+  version 3,
+  type explicit,
+  issuer self : sha256,
+  toBeSigned 
+  {
+    id name : "rca.qa.v2xscms.com",
+    cracaId '000000'H,
+    crlSeries 0,
+    validityPeriod 
+    {
+      start 434707200,
+      duration years : 70
+    },
+    appPermissions 
+    {
+      {
+        psid 35,
+        ssp opaque : '810001'H
+      },
+      {
+        psid 256,
+        ssp opaque : '00010001010100'H
+      }
+    },
+    certIssuePermissions 
+    {
+      {
+        subjectPermissions all : NULL,
+        minChainDepth 3,
+        chainDepthRange -1,
+        eeType { app, enrol }
+      },
+      {
+        subjectPermissions explicit : 
+          {
+            {
+              psid 35
+            }
+          },
+        chainDepthRange -1,
+        eeType { app, enrol }
+      },
+      {
+        subjectPermissions explicit : 
+          {
+            {
+              psid 38
+            }
+          },
+        chainDepthRange -1,
+        eeType { app, enrol }
+      },
+      {
+        subjectPermissions explicit : 
+          {
+            {
+              psid 256
+            }
+          },
+        chainDepthRange -1,
+        eeType { app, enrol }
+      }
+    },
+    verifyKeyIndicator verificationKey : ecdsaNistP256 : compressed-y-0 : '63518EE1358011EC994B629C77AA39FA76EA3626493D3483782AACF5FE274BA9'H
+  },
+  signature ecdsaNistP256Signature : 
+    {
+      r x-only : '31ECB91BCF548F69824DC00C31B51F4099DACA494F0EAE1DDC73725544DE38E2'H,
+      s 'F1F6282B3816850543C5BC2552725178EB385C00383F2A765422DE7E1AFED17C'H
+    }
+}

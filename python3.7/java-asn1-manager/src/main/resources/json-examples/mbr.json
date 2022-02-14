@@ -1,0 +1,90 @@
+{
+  "version":1,
+  "generationTime":123456,
+  "policyFilename":"TBD",
+  "reportType":"proximityPlausibility",
+  "vehicleId": "20",
+  "certificateGroup": "97",
+  "certificateNumber": 7,
+  "evidenceData":[
+    {
+      "observedNeighborList":[
+        {
+          "bsmFile": "CAMP001encoded.csv",
+          "bsmNumber": [6,41],
+          "vehicleId": "20",
+          "certificateGroup": "98",
+          "certificateNumber": 0
+        },
+        {
+          "bsmFile": "CAMP002encoded.csv",
+          "bsmNumber": [13],
+          "vehicleId": "20",
+          "certificateGroup": "98",
+          "certificateNumber": 0
+        }
+      ],
+      "reporterWSMs":
+        {
+          "bsmFile": "CAMP003encoded.csv",
+          "bsmNumber": [8],
+          "vehicleId": "20",
+          "certificateGroup": "99",
+          "certificateNumber": 0
+        }
+      ,
+      "suspectVehicleList":[
+        {
+          "bsmFile": "CAMP001encoded.csv",
+          "bsmNumber": [29,12,14],
+          "vehicleId": "20",
+          "certificateGroup": "97",
+          "certificateNumber": 0
+        },
+        {
+          "bsmFile": "CAMP002encoded.csv",
+          "bsmNumber": [10],
+          "vehicleId": "20",
+          "certificateGroup": "97",
+          "certificateNumber": 0
+        }
+      ]
+    },
+    {
+      "observedNeighborList":[
+      {
+        "bsmFile": "CAMP001encoded.csv",
+        "bsmNumber": [1],
+        "vehicleId": "20",
+        "certificateGroup": "98",
+        "certificateNumber": 0
+      },
+      {
+        "bsmFile": "CAMP002encoded.csv",
+        "bsmNumber": [43],
+        "vehicleId": "20",
+        "certificateGroup": "98",
+        "certificateNumber": 0
+      }
+    ],
+      "reporterWSMs":
+        {
+          "bsmFile": "CAMP003encoded.csv",
+          "bsmNumber": [5],
+          "vehicleId": "20",
+          "certificateGroup": "97",
+          "certificateNumber": 0
+        }
+      ,
+      "suspectVehicleList":[
+        {
+          "bsmFile": "CAMP001encoded.csv",
+          "bsmNumber": [6],
+          "vehicleId": "20",
+          "certificateGroup": "98",
+          "certificateNumber": 9
+        }
+      ]
+    }
+  ]
+}

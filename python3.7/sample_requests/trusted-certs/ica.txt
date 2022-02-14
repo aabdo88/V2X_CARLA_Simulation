@@ -1,0 +1,59 @@
+value CertificateBase ::= 
+{
+  version 3,
+  type explicit,
+  issuer sha256AndDigest : 'DAE1F5A93C13F61B'H,
+  toBeSigned 
+  {
+    id name : "ica.qa.v2xscms.com",
+    cracaId 'DAE1F5'H,
+    crlSeries 2,
+    validityPeriod 
+    {
+      start 434707200,
+      duration years : 50
+    },
+    region identifiedRegion : 
+      {
+        countryOnly : 124,
+        countryOnly : 484,
+        countryOnly : 840
+      },
+    appPermissions 
+    {
+      {
+        psid 35,
+        ssp opaque : '830001'H
+      }
+    },
+    certIssuePermissions 
+    {
+      {
+        subjectPermissions all : NULL,
+        minChainDepth 2,
+        eeType { app, enrol }
+      },
+      {
+        subjectPermissions explicit : 
+          {
+            {
+              psid 35,
+              sspRange all : NULL
+            },
+            {
+              psid 256,
+              sspRange all : NULL
+            }
+          },
+        chainDepthRange -1,
+        eeType { app, enrol }
+      }
+    },
+    verifyKeyIndicator verificationKey : ecdsaNistP256 : compressed-y-0 : 'C51823B37B4DC574E1D6992A40FCD33C739D3456528D12B10936FBA25D14D48B'H
+  },
+  signature ecdsaNistP256Signature : 
+    {
+      r x-only : '9FB0E41610384434A1F0E95743BB94664521AD424F89784BD1B8CB7B09D4726C'H,
+      s 'BB091818157A6093422D1D9633FF51FDE17DAAB4BE6A2888448E952F6D857518'H
+    }
+}

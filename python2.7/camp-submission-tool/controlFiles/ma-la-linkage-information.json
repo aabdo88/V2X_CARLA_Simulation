@@ -1,0 +1,11 @@
+{
+  "maID": "ma",
+  "toBeEncryptedPreLinkageValues":[
+    {
+      "laID":"01",
+      "iValue":1,
+      "reporterPlv":"233445566ABCFD0112",
+      "suspectPlv":"ABCFD0112233445566"
+    }
+  ]
+}

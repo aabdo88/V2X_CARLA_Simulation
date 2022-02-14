@@ -1,0 +1,39 @@
+value CertificateBase ::= 
+{
+  version 3,
+  type implicit,
+  issuer sha256AndDigest : '8F407E8D55658245'H,
+  toBeSigned 
+  {
+    id name : "",
+    cracaId 'DAE1F5'H,
+    crlSeries 4,
+    validityPeriod 
+    {
+      start 434733540,
+      duration years : 3
+    },
+    region identifiedRegion : 
+      {
+        countryOnly : 124,
+        countryOnly : 484,
+        countryOnly : 840
+      },
+    certRequestPermissions 
+    {
+      {
+        subjectPermissions explicit : 
+          {
+            {
+              psid 32
+            },
+            {
+              psid 38
+            }
+          },
+        minChainDepth 0
+      }
+    },
+    verifyKeyIndicator reconstructionValue : compressed-y-1 : '8B884B9443B1FFCF948FE54FD50C02234DDFB9874C09A22CBF00244B4A5666BA'H
+  }
+}

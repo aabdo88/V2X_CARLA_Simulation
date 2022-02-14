@@ -1,0 +1,47 @@
+value CertificateBase ::= 
+{
+  version 3,
+  type explicit,
+  issuer sha256AndDigest : '64F920AB87BF8B0A'H,
+  toBeSigned 
+  {
+    id name : "pca.qa.v2xscms.com",
+    cracaId 'DAE1F5'H,
+    crlSeries 2,
+    validityPeriod 
+    {
+      start 434707200,
+      duration years : 4
+    },
+    region identifiedRegion : 
+      {
+        countryOnly : 124,
+        countryOnly : 484,
+        countryOnly : 840
+      },
+    appPermissions 
+    {
+      {
+        psid 35,
+        ssp opaque : '850001'H
+      }
+    },
+    certIssuePermissions 
+    {
+      {
+        subjectPermissions all : NULL
+      }
+    },
+    encryptionKey 
+    {
+      supportedSymmAlg aes128Ccm,
+      publicKey eciesNistP256 : compressed-y-1 : '02813999D2732266F2B8A5FC86DE5063A0C49D80C688695762BA070A3290A210'H
+    },
+    verifyKeyIndicator verificationKey : ecdsaNistP256 : compressed-y-0 : '9343B6898C66769EC726F597993803114267CA2206C51C13E5908A1A31AFC63D'H
+  },
+  signature ecdsaNistP256Signature : 
+    {
+      r x-only : '73D6941B99113FE99D2B7409EF2BB3CA00763160FA0CB042A12BA6B61B36C33D'H,
+      s '9F6A732956BB8FAAD2E9092FDA4049F289FB97D2B8E43322988776EFE64F0B44'H
+    }
+}

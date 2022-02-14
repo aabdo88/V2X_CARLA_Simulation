@@ -1,0 +1,97 @@
+value ScopedEeEnrollmentCertResponse ::= 
+{
+  version 1,
+  content eca-ee : ecaEeCertResponse : 
+      {
+        version 1,
+        requestHash 'A495991B7852B855'H,
+        ecaCert 
+        {
+          version 3,
+          type explicit,
+          issuer sha256AndDigest : '64F920AB87BF8B0A'H,
+          toBeSigned 
+          {
+            id name : "eca.qa.v2xscms.com",
+            cracaId 'DAE1F5'H,
+            crlSeries 2,
+            validityPeriod 
+            {
+              start 434707200,
+              duration years : 40
+            },
+            region identifiedRegion : 
+              {
+                countryOnly : 124,
+                countryOnly : 484,
+                countryOnly : 840
+              },
+            appPermissions 
+            {
+              {
+                psid 35,
+                ssp opaque : '840001'H
+              }
+            },
+            certIssuePermissions 
+            {
+              {
+                subjectPermissions all : NULL,
+                eeType { enrol }
+              }
+            },
+            encryptionKey 
+            {
+              supportedSymmAlg aes128Ccm,
+              publicKey eciesNistP256 : compressed-y-1 : '55AFCE983E181CAA7F6737825004EFFBD4E13852FEE4BDD4781BDB76B01B1651'H
+            },
+            verifyKeyIndicator verificationKey : ecdsaNistP256 : compressed-y-0 : '2F4BB477A0F8F605EA44DB8F805C5232123C8C44A88B884E35C7AE45AD2FBC82'H
+          },
+          signature ecdsaNistP256Signature : 
+            {
+              r x-only : '90AEEA64971703C94BB74DB1E47F019840F597ED022D4F0888302ECDB2D16F3C'H,
+              s '6CCA5D518B5429F8828A07DC273970832A9675AA164077A5C4F4F7A9621EC4FC'H
+            }
+        },
+        enrollmentCert 
+        {
+          version 3,
+          type implicit,
+          issuer sha256AndDigest : '8F407E8D55658245'H,
+          toBeSigned 
+          {
+            id name : "",
+            cracaId 'DAE1F5'H,
+            crlSeries 4,
+            validityPeriod 
+            {
+              start 434733540,
+              duration years : 3
+            },
+            region identifiedRegion : 
+              {
+                countryOnly : 124,
+                countryOnly : 484,
+                countryOnly : 840
+              },
+            certRequestPermissions 
+            {
+              {
+                subjectPermissions explicit : 
+                  {
+                    {
+                      psid 32
+                    },
+                    {
+                      psid 38
+                    }
+                  },
+                minChainDepth 0
+              }
+            },
+            verifyKeyIndicator reconstructionValue : compressed-y-1 : '8B884B9443B1FFCF948FE54FD50C02234DDFB9874C09A22CBF00244B4A5666BA'H
+          }
+        },
+        privKeyReconstruction '70338C8D768CA4A2D234FDCA57BD6DD6C333BF28D40B6E0835E112F8FD0FCAFE'H
+      }
+}

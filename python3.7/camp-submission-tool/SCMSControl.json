@@ -1,0 +1,16 @@
+{
+  "ClearMADatabase":"Y",
+  "ClearRADatabase":"Y",
+  "RAParameterFile":"C:/Users/Julian/Applications/PythonRequestTool/scms.ra.business.cfg",
+  "MAParameterFile":"C:/Users/Julian/Applications/PythonRequestTool/scms.ma.business.cfg",
+  "MBRs": [
+    {
+      "Filename":"C:/Users/Julian/Google Drive/eTrans Top Level/Clients/CAMP/MAI Project/MAI Tests/MBR Database/CAMP003-1.out",
+      "Count":2
+    },
+    {
+      "Filename":"C:/Users/Julian/Google Drive/eTrans Top Level/Clients/CAMP/MAI Project/MAI Tests/MBR Database/CAMP003-1.out",
+      "Count":2
+    }
+  ]
+}
